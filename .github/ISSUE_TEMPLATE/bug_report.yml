@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible problem using synthetic data only
+title: \"[Bug]: \"
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not submit real personal data, credentials, private documents, or provider tokens.
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Detection and masking
+        - File extraction
+        - Preview and send
+        - Restoration
+        - Authentication and SSO
+        - User interface
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Synthetic reproduction
+      description: Use only generated or fictitious data.
+    validations:
+      required: true

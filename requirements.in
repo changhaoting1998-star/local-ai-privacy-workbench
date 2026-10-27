@@ -1,0 +1,9 @@
+fastapi==0.148.0
+uvicorn==0.54.0
+presidio-analyzer==2.2.364
+cryptography==50.0.2
+httpx==0.28.1
+pytest==9.1.1
+pypdf==6.12.1
+python-multipart==0.0.32
+defusedxml==0.7.1
